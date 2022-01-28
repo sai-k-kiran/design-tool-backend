@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "client": "cd.. && cd whiteboard && npm start",
+    "dev": "concurrently \"nodemon index.js\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^7.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.1",
+    "express-session": "^1.17.2",
+    "fs": "0.0.1-security",
+    "google-auth-library": "^7.10.3",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.12.0-beta.1",
+    "sequelize-cli": "^6.3.0"
+  }
+}
